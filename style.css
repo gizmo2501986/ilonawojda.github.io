@@ -1,0 +1,1201 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.facebook{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    top: 200px;
+    z-index: 50;
+}
+
+.instagram{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-image: url(instagram.png);
+    background-size: cover;
+    top: 255px;
+    transition: 0.3s infnite;
+    z-index: 50;
+}
+
+.text-1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    animation: pulsdwa 4s infinite;
+    
+}
+
+.text-2{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px black;
+    word-spacing: 2px;
+    line-height: 1.8em;
+    
+}
+
+
+.burger{
+    
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(13, 224, 6, 0);
+    z-index: 100;
+    display: none;
+}
+
+.kreska1{
+    margin-top: 5px;
+    height: 8px;
+    width: 100%;
+    background-color: rgb(243, 14, 102);
+    margin-bottom: 10px;
+
+}
+
+.kreska2{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(188, 15, 231);
+    margin-bottom: 10px;
+}
+
+.kreska3{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(219, 123, 13);
+
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    transition: 0.3s linear;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 900px;
+    
+}
+
+.nav-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 150px;
+      
+}
+
+
+
+@media (max-width: 600px) {
+
+    .nav{
+        width: 100%;
+        height: 30vh;
+        transform: translateY(-100%);
+    }
+
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .burger{
+        display: block;
+    }
+    
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.container-first {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url(ilonaduze.jpg);
+  animation: szarosc 3s linear;
+  height: 85vh; 
+  
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+
+
+
+
+
+
+.stupid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    background-color: rgba(37, 220, 20, 0);
+}
+
+
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    
+    
+}
+
+
+
+
+
+
+.card-1{
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px grey;
+    margin: 20px;
+}
+
+.card-1-box1{
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    width: 100%;
+    filter: grayscale(1);
+    background-image: url(gym.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-1-box2{
+    transform: translateY(50%);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+   
+    background-image: url(thumbnail/card1.jpg);
+    background-position: top right 4px;
+    background-size: cover;
+    border: 3px rgb(255, 255, 255) solid;
+}
+
+.card-1-box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 350px;
+    width: 100%;
+    padding-top: 85px;
+    border-radius: 0px 0px 10px 10px;
+   
+}
+
+.text-card{
+    letter-spacing: 1px;
+    font-family: arial;
+    margin-bottom: 50px;
+}
+
+.text-card2{
+    letter-spacing: 1px;
+    font-family: arial;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.text-card3{
+    text-align: center;
+    color: gray;
+}
+
+.box-fb{
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+
+
+.facebook-2{
+    height: 30px;
+    width: 30px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    border-radius: 3px;
+    transition: 0.2s linear;
+}
+
+.facebook-2:hover, .instagram-2:hover{
+    filter: grayscale(1.0);
+}
+
+.instagram-2{
+    
+    height: 30px;
+    width: 30px;
+    transition: 0.2s linear;
+    background-image: url(instagram.png);
+    background-size: cover;
+    border-radius: 3px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card-2{
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px grey;
+    margin: 20px;
+}
+
+.card-2-boxx1{
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    width: 100%;
+    filter: grayscale(1);
+    background-image: url(gym2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-2-boxx2{
+    transform: translateY(50%);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    
+    background-image: url(thumbnail/card2.jpg);
+    background-position: top right 4px;
+    background-size: cover;
+    border: 3px rgb(255, 255, 255) solid;
+}
+
+.card-2-boxx3{
+    box-sizing: border-box;
+    height: 350px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+    border-radius: 0px 0px 10px 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-3{
+    height: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px grey;
+    margin: 20px;
+}
+
+.card-3-top{
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+    width: 100%;
+    
+    background-image: url(gym5.jpg);
+    filter: grayscale(1);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.card-3-circle{
+    transform: translateY(50%);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    
+    background-image: url(thumbnail/card3.jpg);
+    background-position: top right 4px;
+    background-size: cover;
+    border: 3px rgb(255, 255, 255) solid;
+}
+
+.card-3-boxx3{
+    box-sizing: border-box;
+    height: 350px;
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 85px;
+    border-radius: 0px 0px 10px 10px;
+   
+}
+
+.text-plener1{
+    letter-spacing: 1px;
+    font-family: arial;
+    margin-bottom: 50px;
+}
+
+.text-plener2{
+    letter-spacing: 1px;
+    font-family: arial;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.text-time1{
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.text-time2{
+    text-align: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.text-time3{
+    text-align: center;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-3{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    
+    
+}
+
+.container-2-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+ 
+    min-height: 100vh;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.galeria-1 a{
+    display: flex;
+    height: 250px;
+    width: 350px;
+    margin: 20px;
+    border: 2px white solid;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.photogallery{
+    width: 100%;
+}
+
+
+
+.parallax{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(07duze.jpg);
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center right 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+
+  .kontakt-fb{
+    height: 200px;
+    width: 200px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    z-index: 50;
+    
+}
+
+.kontakt-ig{
+    height: 200px;
+    width: 200px;
+    background-image: url(instagram.png);
+    background-size: cover;
+    transition: 0.3s infnite;
+    z-index: 50;
+    
+}
+
+
+
+
+  .container-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+   
+  }
+
+  .container4-box{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    width: 60%;
+    
+
+  }
+
+  .container4-box1{
+    position: relative;
+    box-sizing: border-box;  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+    width: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 28px;
+    box-shadow: 15px 15px 20px 4px grey;
+    overflow: hidden;
+    
+  }
+  
+    .element-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(77, 77, 77);
+        transform: rotate(27deg);
+       
+         
+    }
+
+    .element-2{
+        position: absolute;
+        top: 150px;
+        left: -40px;
+        height: 230px;
+        width: 230px;
+        background-color: rgb(110, 110, 110);
+        transform: rotate(-27deg);
+         
+    }
+
+    .element-3{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        height: 300px;
+        width: 300px;
+        background-color: rgb(43, 43, 43);
+        transform: rotate(13deg);  
+        
+    }
+
+    .element-4{
+        position: absolute;
+        bottom: -40px;
+        right: 40px;
+        height: 224px;
+        width: 224px;
+        background-color: rgb(29, 29, 29);
+        transform: rotate(-34deg);  
+    }
+
+    .element-5{
+        position: absolute;
+        bottom: -40px;
+        right: 140px;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(85, 85, 85);
+        transform: rotate(40deg);  
+    }
+
+  .container4-box2{
+    height: 600px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+
+  .subject{
+    
+    color: white;
+    font-size: 25px;
+    z-index: 2;
+  }
+
+  .pakiet1{
+      font-size: 40px;
+      color: rgb(255, 255, 255);
+      z-index: 2;
+       
+  }
+
+  .pakiet2{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.pakiet3{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.pakiet4{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.last-fb{
+    position: absolute;
+    bottom: 80px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+
+.end-fb{
+    position: absolute;
+    bottom: 60px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    
+}
+
+ .element-6{
+     position: absolute;
+     height: 300px;
+     width: 300px;
+     top: 0;
+     right: -40px;
+     transform: rotate(34deg);
+     background-color: rgb(109, 109, 109);
+ }
+
+ .element-7{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    top: 0;
+    left: -40px;
+    transform: rotate(45deg);
+    background-color: rgb(145, 145, 145);
+}
+
+.element-8{
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    bottom: 0;
+    left: -40px;
+    transform: rotate(45deg);
+    background-color: rgb(109, 103, 103);
+}
+
+.element-9{
+    position: absolute;
+    height: 140px;
+    width: 300px;
+    top: 300px;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: rgb(66, 66, 66);
+}
+
+.element-10{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    right: -120px;
+    bottom: 0;
+    transform: rotate(45deg);
+    background-color: rgb(48, 48, 48);
+}
+
+.element-11{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: rgb(48, 48, 48);
+}
+
+.element-12{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 130px;
+    right: -50px;
+    transform: rotate(45deg);
+    background-color: rgb(82, 81, 81);
+}
+
+.element-13{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -150px;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: rgb(61, 61, 61);
+}
+
+.element-14{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 0;
+    bottom: 160px;
+    transform: rotate(45deg);
+    background-color: rgb(134, 134, 134);
+}
+
+.element-15{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    right: -30px;
+    bottom: 30px;
+    transform: rotate(45deg);
+    background-color: rgb(100, 100, 100);
+}
+
+.element-16{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    right: -150px;
+    bottom: 150px;
+    transform: rotate(45deg);
+    background-color: rgb(107, 107, 107);
+}
+
+.element-17{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: -150px;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: rgb(80, 80, 80);
+}
+
+.element-18{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -90px;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: rgb(41, 41, 41);
+}
+
+.element-19{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 230px;
+    left: -150px;
+    transform: rotate(45deg);
+    background-color: rgb(160, 160, 160);
+}
+
+.element-20{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -200px;
+    left: 50px;
+    transform: rotate(45deg);
+    background-color: rgb(19, 19, 19);
+}
+
+.element-21{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -150px;
+    left: 50px;
+    transform: rotate(45deg);
+    background-color: rgb(19, 19, 19);
+}
+
+.element-22{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 130px;
+    left: 200px;
+    transform: rotate(20deg);
+    background-color: rgb(36, 36, 36);
+}
+
+.element-23{
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    bottom: 350px;
+    left: 200px;
+    transform: rotate(60deg);
+    background-color: rgb(63, 63, 63);
+}
+
+.element-24{
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    top: -150px;
+    left: 150px;
+    transform: rotate(40deg);
+    background-color: rgb(44, 44, 44);
+}
+
+.element-25{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 0px;
+    left: -30px;
+    transform: rotate(10deg);
+    background-color: rgb(87, 87, 87);
+}
+
+.element-26{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 0px;
+    left: -30px;
+    transform: rotate(4deg);
+    background-color: rgb(87, 87, 87);
+}
+
+.element-27{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: -150px;
+    left: -30px;
+    transform: rotate(-40deg);
+    background-color: rgb(48, 48, 48);
+}
+
+.element-28{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -150px;
+    left: -30px;
+    transform: rotate(40deg);
+    background-color: rgb(20, 20, 20);
+}
+
+.element-29{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -170px;
+    left: -150px;
+    transform: rotate(80deg);
+    background-color: rgb(75, 75, 75);
+}
+
+.element-30{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: -200px;
+    left: -170px;
+    transform: rotate(80deg);
+    background-color: rgb(75, 75, 75);
+}
+
+.element-31{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 200px;
+    left: 170px;
+    transform: rotate(80deg);
+    background-color: rgb(49, 49, 49);
+}
+
+.element-32{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 0px;
+    left: -200px;
+    transform: rotate(40deg);
+    background-color: rgb(153, 153, 153);
+}
+
+.element-33{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: -200px;
+    left: 150px;
+    transform: rotate(53deg);
+    background-color: rgb(80, 80, 80);
+}
+
+.element-34{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: -80px;
+    left: -30px;
+    transform: rotate(53deg);
+    background-color: rgb(92, 92, 92);
+}
+
+.element-35{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 200px;
+    left: 40px;
+    transform: rotate(67deg);
+    background-color: rgb(39, 39, 39);
+}
+
+
+.footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.text-footer{
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.facebook3{
+   
+    height: 25px;
+    width: 25px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    z-index: 50;
+    margin-right: 20px;
+}
+
+.instagram3{
+    
+    height: 25px;
+    width: 25px;
+    background-image: url(instagram.png);
+    background-size: cover;
+    
+    transition: 0.3s infnite;
+    z-index: 50;
+}
+
+.karnet{
+    position: absolute;
+    top: 230px;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width: 750px) {
+    .idiota-2, .pudlo, .container-2-box, .container4-box, .container4-box1 {
+        width: 95%;
+    }
+
+    .idiota-2-box1, .idiota-2-box3{
+        display: none;
+    }
+
+    .container-2, .pudlo{
+        flex-grow: 1;
+           
+    }
+
+    .container4-box1{
+        margin: 10px;
+        box-shadow: 5px 5px 5px 4px grey;
+    }
+
+    .text-1{
+        font-size: 25px;
+    }
+
+    .text-2{
+        font-size: 10px;
+    }
+
+    .kontakt-fb{
+        height: 150px;
+        width: 150px;
+        
+        
+    }
+    
+    .kontakt-ig{
+        height: 150px;
+        width: 150px;
+         
+    }
+
+    .galeria-1 a{
+        
+        height: 200px;
+        width: 300px;
+        
+        
+        
+    }
+    
+    .container-1 {
+        
+        background-position: center;
+        background-position-x: -500px;
+       
+      }
+    
+
+    
+       
+    
+
+    .debil{
+        background-image: url(07male.jpg);
+        background-position: bottom 0;
+    }
+
+    .facebook, .instagram{
+        right: 0;
+    }
+
+}
+
+
+
+
+
+  @keyframes puls {
+      0%{
+          font-size: 80px;
+      }
+
+      50%{
+          font-size: 83px;
+      }
+
+      100%{
+          font-size: 80px;
+      }
+  }
+
+  @keyframes pulsdwa {
+    0%{
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.04);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+
+@keyframes pulsfb {
+    
+    0%{
+        transform: scale(1.0);
+    }
+
+    50%{
+        transform: scale(1.04);
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+
+
+
+}

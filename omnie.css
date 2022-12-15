@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.facebook{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    top: 400px;
+    z-index: 50;
+}
+
+.instagram{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-image: url(instagram.png);
+    background-size: cover;
+    top: 455px;
+    transition: 0.3s infnite;
+    z-index: 50;
+}
+
+.text-1{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    animation: pulsdwa 4s infinite;
+}
+
+.text-2{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    transition: 0.3s linear;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 900px;
+    
+}
+
+.nav-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 150px;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(ilona3.jpg);
+    background-position: center right 0;
+    filter: grayscale(1);
+    
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.text-top{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px black;
+    
+}
+
+.text-bottom{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px black;
+    
+}
+
+.container-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.kok{
+    font-weight: bold;
+    color: darkorange;
+}
+
+.awards{
+    margin-top: 50px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    
+    
+}
+
+.text-champion{
+    font-size: 20px;
+    
+}
+
+.medal-box{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 500px;
+    background-color: rgba(153, 205, 50, 0);
+    margin-bottom: 80px;
+   
+}
+
+.boxmedal1{
+    background-image: url(medal1.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(255, 255, 0, 0);
+    
+}
+
+
+
+
+.footer{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.text-footer{
+    position: relative;
+    top: 5px;
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.facebook3{
+   
+    height: 25px;
+    width: 25px;
+    background-image: url(facebook.png);
+    background-size: cover;
+    z-index: 50;
+    margin-right: 20px;
+}
+
+.instagram3{
+    
+    height: 25px;
+    width: 25px;
+    background-image: url(instagram.png);
+    background-size: cover;
+    
+    transition: 0.3s infnite;
+    z-index: 50;
+}
+
+.burger{
+    
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(13, 224, 6, 0);
+    z-index: 100;
+    display: none;
+}
+
+.kreska1{
+    margin-top: 5px;
+    height: 8px;
+    width: 100%;
+    background-color: rgb(243, 14, 102);
+    margin-bottom: 10px;
+
+}
+
+.kreska2{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(188, 15, 231);
+    margin-bottom: 10px;
+}
+
+.kreska3{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(219, 123, 13);
+
+}
+
+
+
+
+
+ 
+
+
+
+@media (max-width: 600px) {
+
+    .container-1{
+        background-position: center;
+    }
+    .nav{
+        width: 100%;
+        height: 30vh;
+        transform: translateY(-100%);
+    }
+
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .text-top{
+        font-size: 40px;
+        margin-bottom: 10px;
+        
+    }
+
+    .text-bottom{
+        font-size: 15px;
+        
+    }
+
+    .medal-box{
+        width: 300px;
+    }
+
+    .text-champion{
+        font-size: 15px;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
